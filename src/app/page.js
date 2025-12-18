@@ -99,7 +99,10 @@ async function getProducts() {
 
 // Generate static metadata for this page
 export const metadata = {
-  title: "Discover Our Products | Premium Handcrafted Items & Artisan Goods",
+  title: "Appscrip",
+  icons: {
+    icon: "/assets/logo.png",
+  },
   description:
     "Browse our curated collection of 3426 premium handcrafted products. Unique artisan goods, customizable items, and quality craftsmanship. Shop now!",
   keywords:
