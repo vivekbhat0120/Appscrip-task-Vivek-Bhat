@@ -265,7 +265,7 @@
 
 .paymentIcons {
   display: flex;
-  gap: 10px;
+  gap: 2px;
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
@@ -273,7 +273,7 @@
 
 .paymentIcon {
   display: inline-block;
-  height: 45px;
+  height: 42px;
   background: #ffffff;
   border-radius: 4px;
   padding: 0;
