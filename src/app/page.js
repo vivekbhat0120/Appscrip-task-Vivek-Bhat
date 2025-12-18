@@ -99,7 +99,7 @@ async function getProducts() {
 
 // Generate static metadata for this page
 export const metadata = {
-  title: "Appscrip",
+  title: "Vivek Bhat",
   icons: {
     icon: "/assets/logo.png",
   },
