@@ -1,141 +1,146 @@
+/* Page Container */
 .page {
-  --background: #fafafa;
-  --foreground: #fff;
-
-  --text-primary: #000;
-  --text-secondary: #666;
-
-  --button-primary-hover: #383838;
-  --button-secondary-hover: #f2f2f2;
-  --button-secondary-border: #ebebeb;
-
-  display: flex;
   min-height: 100vh;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--font-geist-sans);
-  background-color: var(--background);
+  background: #ffffff;
+  color: #252020;
+  font-family: "Inter", "Segoe UI", Roboto, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
-.main {
-  display: flex;
-  min-height: 100vh;
-  width: 100%;
-  max-width: 800px;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-between;
-  background-color: var(--foreground);
-  padding: 120px 60px;
+/* Hero Section */
+.hero {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 80px 32px 100px;
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
 }
 
-.intro {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  text-align: left;
-  gap: 24px;
+/* Main Heading (H1) */
+.title {
+  font-size: 70px;
+  font-family: "Oswald", "Arial Narrow", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  font-weight: 400;
+  letter-spacing: 4px;
+  line-height: 1.5;
+  color: #252020;
+  margin: 0 0 24px 0;
+  text-transform: uppercase;
 }
 
-.intro h1 {
-  max-width: 320px;
-  font-size: 40px;
-  font-weight: 600;
-  line-height: 48px;
-  letter-spacing: -2.4px;
-  text-wrap: balance;
-  color: var(--text-primary);
-}
-
-.intro p {
-  max-width: 440px;
+/* Subtitle Paragraph */
+.subtitle {
+  max-width: 700px;
+  margin: 0 auto;
+  font-family: "Inter", "Segoe UI", Roboto, Arial, sans-serif;
   font-size: 18px;
-  line-height: 32px;
-  text-wrap: balance;
-  color: var(--text-secondary);
+  line-height: 1.8;
+  color: #5e5e5e;
+  font-weight: 400;
+  letter-spacing: 0.6px;
 }
 
-.intro a {
-  font-weight: 500;
-  color: var(--text-primary);
+/* Product Listing Section */
+.productListing {
+  padding: 32px 0 0px;
 }
 
-.ctas {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  max-width: 440px;
-  gap: 16px;
-  font-size: 14px;
+/* Server render caption (optional - can be removed for production) */
+.srCaption {
+  display: block;
+  margin: 32px auto;
+  text-align: center;
+  font-size: 11px;
+  color: #999999;
+  font-style: italic;
+  max-width: 1440px;
+  padding: 0 32px;
 }
 
-.ctas a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 40px;
-  padding: 0 16px;
-  border-radius: 128px;
-  border: 1px solid transparent;
-  transition: 0.2s;
-  cursor: pointer;
-  width: fit-content;
-  font-weight: 500;
-}
-
-a.primary {
-  background: var(--text-primary);
-  color: var(--background);
-  gap: 8px;
-}
-
-a.secondary {
-  border-color: var(--button-secondary-border);
-}
-
-/* Enable hover only on non-touch devices */
-@media (hover: hover) and (pointer: fine) {
-  a.primary:hover {
-    background: var(--button-primary-hover);
-    border-color: transparent;
+/* Responsive Breakpoints */
+@media (max-width: 1024px) {
+  .hero {
+    padding: 60px 28px 80px;
   }
 
-  a.secondary:hover {
-    background: var(--button-secondary-hover);
-    border-color: transparent;
+  .title {
+    font-size: 56px;
+    letter-spacing: 3px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+    max-width: 900px;
+  }
+
+  .productListing {
+    padding: 28px 0 56px;
   }
 }
 
-@media (max-width: 600px) {
-  .main {
-    padding: 48px 24px;
+@media (max-width: 768px) {
+  .hero {
+    padding: 48px 24px 64px;
   }
 
-  .intro {
-    gap: 16px;
+  .title {
+    font-size: 44px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
   }
 
-  .intro h1 {
-    font-size: 32px;
-    line-height: 40px;
-    letter-spacing: -1.92px;
+  .subtitle {
+    font-size: 15px;
+    line-height: 1.7;
+    max-width: 600px;
+  }
+
+  .productListing {
+    padding: 24px 0 48px;
   }
 }
 
-@media (prefers-color-scheme: dark) {
-  .logo {
-    filter: invert();
+@media (max-width: 640px) {
+  .hero {
+    padding: 40px 20px 56px;
   }
 
-  .page {
-    --background: #000;
-    --foreground: #000;
+  .title {
+    font-size: 36px;
+    letter-spacing: 1.2px;
+    margin-bottom: 18px;
+    line-height: 1.25;
+  }
 
-    --text-primary: #ededed;
-    --text-secondary: #999;
+  .subtitle {
+    font-size: 14px;
+    line-height: 1.6;
+    padding: 0 8px;
+  }
 
-    --button-primary-hover: #ccc;
-    --button-secondary-hover: #1a1a1a;
-    --button-secondary-border: #1a1a1a;
+  .srCaption {
+    margin-top: 24px;
+    font-size: 10px;
+    padding: 0 20px;
+  }
+
+  .productListing {
+    padding: 20px 0 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 30px;
+    letter-spacing: 1px;
+  }
+
+  .subtitle {
+    font-size: 13px;
+  }
+
+  .productListing {
+    padding: 16px 0 32px;
   }
 }

@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "export": "next build && next export",
     "start": "next start",
     "lint": "eslint"
   },
@@ -16,6 +17,8 @@
   "devDependencies": {
     "babel-plugin-react-compiler": "1.0.0",
     "eslint": "^9",
-    "eslint-config-next": "16.0.10"
+    "eslint-config-next": "16.0.10",
+    "@netlify/plugin-nextjs": "latest",
+    "netlify-cli": "latest"
   }
 }

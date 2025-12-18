@@ -1,0 +1,11 @@
+<svg width="400" height="533" viewBox="0 0 400 533" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="533" fill="#FFF9E5"/>
+  <g opacity="0.5">
+    <ellipse cx="200" cy="300" rx="80" ry="60" fill="#FFD700"/>
+    <circle cx="170" cy="280" r="15" fill="#87CEEB"/>
+    <circle cx="230" cy="280" r="15" fill="#87CEEB"/>
+    <rect x="190" y="250" width="20" height="30" rx="10" fill="#FFD700"/>
+    <ellipse cx="200" cy="340" rx="60" ry="40" fill="#FFD700"/>
+  </g>
+  <text x="200" y="470" font-family="Arial" font-size="14" fill="#999999" text-anchor="middle">Yellow Toy</text>
+</svg>

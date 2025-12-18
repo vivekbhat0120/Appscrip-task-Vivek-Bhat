@@ -1,0 +1,5 @@
+<svg width="56" height="36" viewBox="0 0 56 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="56" height="36" rx="4" fill="white"/>
+  <rect x="12" y="12" width="32" height="12" rx="2" fill="#000000"/>
+  <text x="28" y="29" font-family="Arial" font-size="6" font-weight="700" fill="#000000" text-anchor="middle">Apple Pay</text>
+</svg>

@@ -1,0 +1,9 @@
+<svg width="400" height="533" viewBox="0 0 400 533" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="533" fill="#F5F5F5"/>
+  <g opacity="0.4">
+    <path d="M150 200 L250 200 L270 380 L130 380 Z" fill="#8B4513"/>
+    <rect x="170" y="180" width="60" height="30" rx="15" fill="#654321"/>
+    <line x1="180" y1="200" x2="180" y2="180" stroke="#654321" stroke-width="3"/>
+  </g>
+  <text x="200" y="470" font-family="Arial" font-size="14" fill="#999999" text-anchor="middle">Leather Bag</text>
+</svg>

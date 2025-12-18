@@ -1,0 +1,13 @@
+# Netlify configuration for Next.js using the official Netlify Next.js plugin
+[build]
+  command = "npm run build"
+  # If you use the Netlify Next.js plugin, the plugin writes to .netlify/output.
+  # For a static export (see `npm run export`), Netlify should publish the `out` folder.
+  publish = "out"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+
+# Optional: specify a Node version for Netlify builds
+# [build.environment]
+#   NODE_VERSION = "18"

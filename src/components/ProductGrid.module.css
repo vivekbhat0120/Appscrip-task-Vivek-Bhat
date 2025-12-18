@@ -1,0 +1,160 @@
+/* Product Grid Styles */
+
+.productSection {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+.contentContainer {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 0;
+  min-height: 600px;
+}
+
+/* Grid Container */
+.gridContainer {
+  padding: 32px 0 32px 32px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px 24px;
+}
+
+/* Responsive Grid */
+@media (max-width: 1280px) {
+  .contentContainer {
+    grid-template-columns: 260px 1fr;
+  }
+
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px 20px;
+  }
+
+  .gridContainer {
+    padding: 28px 0 28px 28px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .productSection {
+    padding: 0 24px;
+  }
+
+  .contentContainer {
+    grid-template-columns: 240px 1fr;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px 16px;
+  }
+
+  .gridContainer {
+    padding: 24px 0 24px 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .productSection {
+    padding: 0 20px;
+  }
+
+  .contentContainer {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .gridContainer {
+    padding: 24px 0;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px 12px;
+  }
+}
+
+@media (max-width: 640px) {
+  .productSection {
+    padding: 0 16px;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px 10px;
+  }
+
+  .gridContainer {
+    padding: 20px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .productSection {
+    padding: 0 12px;
+  }
+
+  /* Keep 2 columns on most mobile screens to match design */
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .gridContainer {
+    padding: 16px 0;
+  }
+}
+
+/* When the sidebar is hidden, make the content container full width
+   and display the product grid as 4 columns on large screens. */
+.noSidebar {
+  grid-template-columns: 1fr;
+}
+
+.noSidebar .gridContainer {
+  padding-left: 0;
+  padding: 32px 0 32px 0;
+}
+
+.noSidebar .grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px 24px;
+}
+
+@media (max-width: 1280px) {
+  .noSidebar .grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 28px 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .noSidebar .grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px 16px;
+  }
+
+  .noSidebar .gridContainer {
+    padding: 24px 0 24px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .noSidebar .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .noSidebar .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+}

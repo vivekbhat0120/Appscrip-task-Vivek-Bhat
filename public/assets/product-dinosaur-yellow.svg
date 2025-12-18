@@ -1,0 +1,13 @@
+<svg width="400" height="533" viewBox="0 0 400 533" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="533" fill="#FFFACD"/>
+  <g opacity="0.5">
+    <ellipse cx="200" cy="320" rx="90" ry="70" fill="#FFD700"/>
+    <circle cx="180" cy="300" r="12" fill="#87CEEB"/>
+    <circle cx="220" cy="300" r="12" fill="#87CEEB"/>
+    <path d="M200 230 L190 250 L200 240 L210 250 Z" fill="#FFD700"/>
+    <rect x="180" y="200" width="40" height="20" rx="10" fill="#87CEEB"/>
+    <rect x="160" y="210" width="20" height="15" rx="8" fill="#87CEEB"/>
+    <rect x="220" y="210" width="20" height="15" rx="8" fill="#87CEEB"/>
+  </g>
+  <text x="200" y="470" font-family="Arial" font-size="14" fill="#999999" text-anchor="middle">Yellow Dinosaur Toy</text>
+</svg>

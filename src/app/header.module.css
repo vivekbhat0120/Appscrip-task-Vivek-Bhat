@@ -1,0 +1,276 @@
+/* Header Styles - Matching the design exactly */
+
+.header {
+  position: sticky;
+  top: 0;
+  background: #ffffff;
+  z-index: 1000;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+/* Top Header Container */
+.headerContainer {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  padding: 20px 32px;
+  gap: 24px;
+  min-height: 80px;
+}
+
+/* Logo Section - Left */
+.logoSection {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.logoLink {
+  display: inline-flex;
+  align-items: center;
+  transition: opacity 0.2s ease;
+}
+
+.logoLink:hover {
+  opacity: 0.7;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  color: #000000;
+}
+
+/* Center Logo Text */
+.centerLogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logoText {
+  font-size: 42px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  color: #000000;
+  margin: 0;
+  line-height: 1;
+}
+
+.menuButton {
+  display: none;
+  background: none;
+  border: none;
+  padding: 6px;
+  margin-right: 8px;
+  cursor: pointer;
+  color: #000000;
+}
+
+/* Icon Group - Right */
+.iconGroup {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 16px;
+}
+
+.iconButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.2s ease;
+  color: #000000;
+}
+
+.iconButton:hover {
+  opacity: 0.6;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  color: #000000;
+}
+
+.languageSelector {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+  padding: 4px 8px;
+  transition: opacity 0.2s ease;
+}
+
+.languageSelector:hover {
+  opacity: 0.6;
+}
+
+.langText {
+  font-size: 14px;
+  font-weight: 600;
+  color: #000000;
+  letter-spacing: 0.5px;
+}
+
+.chevron {
+  width: 10px;
+  height: 6px;
+  color: #000000;
+}
+
+/* Navigation Bar */
+.navbar {
+  /* border-top: 1px solid #e5e5e5; */
+  background: #ffffff;
+}
+
+.navContainer {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+.navList {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+  list-style: none;
+  margin: 0;
+  padding: 20px 0;
+}
+
+.navItem {
+  margin: 0;
+}
+
+.navLink {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  color: #292929;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  display: inline-block;
+}
+
+.navLink:hover {
+  color: #666666;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .headerContainer {
+    padding: 16px 24px;
+  }
+
+  .navContainer {
+    padding: 0 24px;
+  }
+
+  .navList {
+    gap: 32px;
+  }
+
+  .logoText {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 768px) {
+  .headerContainer {
+    grid-template-columns: auto 1fr auto;
+    padding: 16px 20px;
+    min-height: 70px;
+  }
+
+  .centerLogo {
+    justify-self: center;
+    align-self: center;
+  }
+
+  .logoSection {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .menuButton {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .iconGroup {
+    order: 2;
+    gap: 12px;
+  }
+
+  .logoText {
+    font-size: 32px;
+    letter-spacing: 2px;
+  }
+
+  .navList {
+    gap: 24px;
+    font-size: 14px;
+  }
+
+  .navLink {
+    font-size: 14px;
+    letter-spacing: 0.8px;
+  }
+}
+
+@media (max-width: 640px) {
+  .navbar {
+    display: none;
+  }
+
+  .headerContainer {
+    padding: 14px 16px;
+    min-height: 60px;
+  }
+
+  .logoText {
+    font-size: 28px;
+  }
+
+  .logo {
+    width: 32px;
+    height: 32px;
+  }
+
+  .iconGroup {
+    gap: 10px;
+  }
+
+  .icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .menuButton {
+    display: inline-flex;
+  }
+
+  .langText {
+    font-size: 12px;
+  }
+
+  /* Hide user account and language selector on small screens */
+  .userButton {
+    display: none;
+  }
+
+  .languageSelector {
+    display: none;
+  }
+}

@@ -1,0 +1,707 @@
+/* Footer Styles */
+
+.footer {
+  background-color: #000000;
+  color: #ffffff;
+  margin-top: 64px;
+}
+
+/* Top Section - Newsletter & Contact */
+.topSection {
+  padding: 50px;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.newsletterContact {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 80px;
+}
+
+/* Newsletter Section */
+.newsletter {
+  max-width: 700px;
+}
+
+.newsletterTitle {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin: 0 0 16px 0;
+  color: #ffffff;
+}
+
+.newsletterText {
+  font-size: 16px;
+  color: #ffffff;
+  margin: 0 0 32px 0;
+  line-height: 1.5;
+}
+
+.subscribeForm {
+  display: flex;
+  gap: 16px;
+}
+
+.emailInput {
+  flex: 1;
+  padding: 16px 20px;
+  background: #ffffff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #000000;
+}
+
+.emailInput::placeholder {
+  color: #999999;
+}
+
+.emailInput:focus {
+  outline: 2px solid #ffffff;
+  outline-offset: 2px;
+}
+
+.subscribeButton {
+  padding: 16px 32px;
+  background: #000000;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.subscribeButton:hover {
+  background: #ffffff;
+  color: #000000;
+}
+
+/* Contact Section */
+.contact {
+  display: flex;
+  flex-direction: column;
+}
+
+.contactTitle {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin: 0 0 16px 0;
+  color: #ffffff;
+}
+
+.contactInfo {
+  font-size: 16px;
+  margin: 0 0 12px 0;
+  line-height: 1.6;
+}
+
+.contactLink {
+  color: #ffffff;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.contactLink:hover {
+  opacity: 0.7;
+  text-decoration: underline;
+}
+
+/* Currency Section */
+.currency {
+  margin-top: 25px;
+}
+
+.currencyTitle {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin: 0 0 12px 0;
+  color: #ffffff;
+}
+
+.currencySelector {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.flagIcon {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.currencyCode {
+  font-size: 16px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.currencyNote {
+  font-size: 13px;
+  color: #cccccc;
+  line-height: 1.5;
+  max-width: 400px;
+}
+
+/* Divider */
+.divider {
+  height: 2px;
+  background: #777777;
+  margin: 0 50px;
+}
+
+/* Bottom Section - Links */
+.bottomSection {
+  padding: 50px 80px;
+}
+
+.linksContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1.3fr;
+  gap: 40px;
+}
+
+.linkColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.brandName {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0 0 24px 0;
+  color: #ffffff;
+}
+
+.columnTitle {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin: 0 0 24px 0;
+  color: #ffffff;
+}
+
+.linkList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.linkList li {
+  margin-bottom: 12px;
+}
+
+.footerLink {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 1.8;
+  transition: opacity 0.2s ease;
+  display: inline-block;
+}
+
+.footerLink:hover {
+  opacity: 0.7;
+  text-decoration: underline;
+}
+
+/* Social Links */
+.socialLinks {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 28px;
+}
+
+.socialIcon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  background: transparent;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.3s ease;
+  border: 2px solid #ffffff;
+  box-sizing: border-box;
+}
+
+.socialIcon:hover {
+  background: #ffffff;
+  color: #000000;
+  transform: scale(1.06);
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+}
+
+/* Payment Section */
+.paymentSection {
+  margin-top: 8px;
+}
+
+.paymentTitle {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0 0 20px 0;
+  color: #ffffff;
+}
+
+.paymentIcons {
+  display: flex;
+  gap: 10px;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.paymentIcon {
+  display: inline-block;
+  height: 45px;
+  background: #ffffff;
+  border-radius: 4px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Mobile payment wrapper (hidden by default, shown on small screens) */
+.paymentMobileWrap {
+  display: none;
+}
+
+/* Copyright */
+.copyright {
+  padding: 10px 0;
+}
+
+.copyrightText {
+  text-align: center;
+  font-size: 14px;
+  color: #cccccc;
+  margin: 0;
+}
+
+.toggleTitle {
+  display: none;
+  width: 100%;
+  background: none;
+  border: none;
+  color: #ffffff;
+  text-align: left;
+  padding: 8px 0;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chev {
+  width: 12px;
+  height: 8px;
+  display: inline-block;
+  opacity: 0.85;
+  transform-origin: center;
+  transition: transform 0.2s ease;
+}
+
+.chev path {
+  stroke: currentColor;
+  stroke-width: 1.5;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .newsletterContact {
+    gap: 60px;
+  }
+
+  .linksContainer {
+    gap: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .topSection {
+    padding: 40px 0 32px;
+  }
+
+  .newsletterContact {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .newsletter {
+    max-width: 100%;
+  }
+
+  .subscribeForm {
+    flex-direction: row;
+  }
+
+  .subscribeButton {
+    width: auto;
+  }
+
+  .bottomSection {
+    padding: 40px 0 24px;
+  }
+
+  .linksContainer {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+
+  .linkColumn:last-child {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 640px) {
+  .container {
+    padding: 0 20px;
+  }
+
+  .topSection {
+    padding: 32px 0 24px;
+  }
+
+  .newsletterTitle,
+  .contactTitle {
+    font-size: 16px;
+  }
+
+  .newsletterText,
+  .contactInfo {
+    font-size: 14px;
+  }
+
+  .divider {
+    margin: 0 20px;
+  }
+
+  .bottomSection {
+    padding: 32px 0 20px;
+  }
+
+  .linksContainer {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .linkColumn:last-child {
+    grid-column: 1;
+  }
+
+  .brandName {
+    font-size: 18px;
+  }
+
+  .columnTitle {
+    font-size: 14px;
+  }
+
+  .footerLink {
+    font-size: 14px;
+  }
+
+  .paymentIcons {
+    max-width: 100%;
+  }
+
+  .copyrightText {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .topSection {
+    padding: 20px;
+  }
+
+  .container {
+    padding: 0;
+  }
+
+  .newsletterContact {
+    gap: 24px;
+  }
+
+  .newsletter {
+    padding-top: 10px;
+    max-width: 100%;
+  }
+
+  .newsletterTitle {
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+
+  .newsletterText {
+    font-size: 13px;
+    margin-bottom: 16px;
+    line-height: 1.4;
+  }
+
+  .subscribeForm {
+    flex-direction: row;
+    gap: 12px;
+  }
+
+  .emailInput {
+    padding: 12px 14px;
+    font-size: 13px;
+    flex: 1;
+  }
+
+  .subscribeButton {
+    padding: 12px 10px;
+    font-size: 12px;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  .contactTitle {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .contactInfo {
+    font-size: 13px;
+    margin-bottom: 0;
+  }
+
+  /* Mobile: show CONTACT entries inline with a centered bullet separator */
+  .contact {
+    display: block;
+    width: 100%;
+  }
+
+  .contactTitle {
+    display: block;
+    width: 100%;
+    letter-spacing: 0.6px;
+  }
+
+  .contactInfo {
+    display: inline-flex;
+    align-items: center;
+    gap: 0;
+    margin: 0;
+    font-size: 13px;
+  }
+
+  /* add a small centered dot between phone and email (applies to every .contactInfo except the first) */
+  .contactInfo:not(:first-of-type)::before {
+    content: "•";
+    display: inline-block;
+    margin: 0 12px;
+    color: #ffffff;
+    opacity: 0.9;
+    font-size: 14px;
+    line-height: 1;
+  }
+
+  .contact {
+    padding-top: 20px;
+    border-top: #999999 2px solid;
+  }
+  .currency {
+    padding-top: 20px;
+    border-top: #999999 2px solid;
+  }
+
+  .currencyTitle {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .currencySelector {
+    gap: 8px;
+    align-items: center;
+  }
+
+  .flagIcon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .currencyCode {
+    font-size: 13px;
+  }
+
+  /* hide the currency note on very small screens for a tighter layout */
+  .currencyNote {
+    display: none;
+  }
+
+  .divider {
+    margin: 0 10px;
+  }
+
+  .socialLinks {
+    gap: 12px;
+    margin-bottom: 16px;
+  }
+
+  .socialIcon {
+    width: 42px;
+    height: 42px;
+  }
+
+  .icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  /* Mobile accordion styles */
+  .toggleTitle {
+    display: none;
+    width: 100%;
+    background: none;
+    border-bottom: 1px solid #333333;
+    color: #ffffff;
+    text-align: left;
+    padding: 0;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .chev {
+    font-size: 18px;
+    line-height: 1;
+    opacity: 0.8;
+    transform-origin: center;
+    transition: transform 0.2s ease;
+  }
+
+  .collapsed {
+    display: none;
+  }
+
+  .expanded {
+    margin-top: 20px;
+    display: block;
+  }
+
+  .socialArea {
+    display: block;
+  }
+}
+
+/* Mobile specific behavior */
+@media (max-width: 640px) {
+  .toggleTitle {
+    display: flex;
+  }
+
+  /* collapsed by default on mobile */
+  .collapsed {
+    display: none;
+  }
+
+  .expanded {
+    display: block;
+  }
+
+  .chev {
+    transform: rotate(0deg);
+  }
+
+  .toggleTitle[aria-expanded="true"] .chev {
+    transform: rotate(180deg);
+  }
+}
+
+/* Large screens (min-width: 800px) – desktop exact layout */
+@media (min-width: 800px) {
+  .bottomSection {
+    padding: 50px 80px;
+  }
+
+  .linksContainer {
+    grid-template-columns: 1fr 1fr 1.4fr;
+    gap: 80px;
+    align-items: start;
+  }
+
+  .columnTitle,
+  .brandName,
+  .paymentTitle {
+    text-transform: none;
+    font-weight: 700;
+  }
+
+  .brandName {
+    font-size: 18px;
+  }
+
+  /* ensure lists are always visible on desktop */
+  .linkList,
+  .socialArea {
+    display: block !important;
+  }
+
+  /* Remove the small-screen chevron on larger screens */
+  .chev {
+    display: none !important;
+  }
+}
+
+/* On very small screens, move payment icons out of the Follow Us area
+   by hiding the original paymentSection inside .socialArea and showing
+   the standalone .paymentMobileWrap below the links */
+@media (max-width: 480px) {
+  .topSection {
+    padding: 15px;
+  }
+  .bottomSection {
+    margin-top: 15px;
+    padding: 15px;
+  }
+  .socialArea .paymentSection {
+    display: none;
+  }
+
+  .paymentMobileWrap {
+    display: block;
+    margin-top: 15px;
+    padding-top: 16px;
+  }
+
+  .paymentMobileWrap .paymentIcons {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+
+    .paymentIcon {
+      display: inline-block;
+      height: 25px;
+    }
+  }
+}

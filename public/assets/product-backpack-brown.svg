@@ -1,0 +1,10 @@
+<svg width="400" height="533" viewBox="0 0 400 533" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="533" fill="#F0E8E0"/>
+  <g opacity="0.4">
+    <rect x="100" y="150" width="200" height="250" rx="10" fill="#8B6F47"/>
+    <rect x="120" y="320" width="80" height="60" rx="5" fill="#654321"/>
+    <rect x="200" y="320" width="80" height="60" rx="5" fill="#654321"/>
+    <circle cx="200" cy="240" r="40" fill="#5D4E37"/>
+  </g>
+  <text x="200" y="470" font-family="Arial" font-size="14" fill="#999999" text-anchor="middle">Brown Backpack</text>
+</svg>
