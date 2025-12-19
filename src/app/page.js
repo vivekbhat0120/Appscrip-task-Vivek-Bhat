@@ -36,9 +36,9 @@ export default async function Home() {
       <Footer />
 
       {/* SSR indicator - can be removed in production */}
-      <span className={styles.srCaption} aria-label="Server render timestamp">
+      {/* <span className={styles.srCaption} aria-label="Server render timestamp">
         Page rendered on server at: {renderedAt}
-      </span>
+      </span> */}
     </div>
   );
 }
