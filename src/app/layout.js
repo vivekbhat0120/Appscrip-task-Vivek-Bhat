@@ -18,7 +18,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Discover Our Products | Premium Handcrafted Items & Stories",
+  title: "Vivek Bhat",
   description:
     "Explore our collection of handcrafted products, unique skills, inspiring stories and quality craftsmanship. Server-side rendered Next.js e-commerce experience with premium products.",
   keywords:
@@ -27,7 +27,7 @@ export const metadata = {
   creator: "Appscrip",
   publisher: "Appscrip",
   openGraph: {
-    title: "Discover Our Products | Premium Handcrafted Items",
+    title: "Vivek Bhat",
     description:
       "Explore our collection of handcrafted products, unique skills, and inspiring stories. Premium quality craftsmanship.",
     url: "https://www.appscrip.com",
@@ -45,7 +45,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Discover Our Products | Premium Handcrafted Items",
+    title: "Vivek Bhat",
     description:
       "Explore our collection of handcrafted products, unique skills, and inspiring stories.",
     images: ["/assets/discover-products-hero.jpg"],
@@ -69,7 +69,7 @@ export const metadata = {
 const schema = {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  name: "Discover Our Products",
+  name: "Vivek Bhat",
   description: metadata.description,
   url: "https://www.appscrip.com",
   publisher: {
